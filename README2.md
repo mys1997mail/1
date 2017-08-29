@@ -2,15 +2,15 @@
 Created new server type "TTS" (TickTrader Server) to UserSorter tool.
 
 # What does it do
-TTUserSorter is using for user sorting by required Equity and Traded Volume. It separates users into the groups according the rules, which define by regular expression in configuration file.
+TTUserSorter is using for user sorting by required Equity and Traded Volume. It separates users into the groups according the rules, which define by regular expression in configuration file and create instruction file for MetaManagerScript.
 
 # How do make it work 
 All parameters for user sorting are set in configuration file "UserSorter.yml".
  - Open configuration file "UserSorter.yml";
  - Set required Equities and Trade Volumes ranges;
  - Set two regular expressions, which define
- 	1) which groups should be handled;
-	2) name pattern for handled groups;
+ 	1) in which groups users should be handled;
+	2) group name pattern for handled users;
  - Set TTServer connection
  	1) Address;
 	2) Login;
@@ -23,9 +23,10 @@ All parameters for user sorting are set in configuration file "UserSorter.yml".
 	3) ScriptOutputName - result file name;
 	4) ExcludeGroups - regular expressions which define excluded groups (should not be handled).
  - Save changes in UserSorter.yml;
+ All parameters set as String.
  - Run TTUserSorter.exe;
  - See result file;
- - Paste the script inside 'command.sc', and run 'MeraManagerScript.exe';
+ - Paste the result script inside 'command.sc', and run 'MeraManagerScript.exe';
  
 
 # Examples of configuration file
@@ -72,6 +73,7 @@ Equities:
 TTServer:
     Address: "tp.st.soft-fx.eu"
     Login: "72"
+    Password: "******"
 
  
 SymbolRules: 
@@ -109,7 +111,4 @@ EditUser {"Logins":"101055", "Group":"1R6" }
 
 # More information
 For more information (Equity and Trade Volume values, users do not match regex, users match groups and etc) see Logs file. 
-# How to test it?
-You have sample code inside examples/sample_bars.r with various snippets of code. 
 
-A simple code sample code is the following:
