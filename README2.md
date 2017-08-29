@@ -23,6 +23,7 @@ All parameters for user sorting are set in configuration file "UserSorter.yml".
 	3) ScriptOutputName - result file name;
 	4) ExcludeGroups - regular expressions which define excluded groups (should not be handled).
  - Save changes in UserSorter.yml;
+ 
  All parameters set as String.
  - Run TTUserSorter.exe;
  - See result file;
