@@ -21,7 +21,7 @@ All parameters for user sorting are set in configuration file "UserSorter.yml".
  	1) TimeRange - time range. Only (Current|Last)(Week|Month|Year);
 	2) CopyScriptToFolder - path, where should be create result file;
 	3) ScriptOutputName - result file name;
-	4) ExcludeGroups - regular expressions which define excluded groups (should not be handled).
+	4) ExcludeGroups - regular expressions (can't be blank) which define excluded groups (should not be handled).
  - Save changes in UserSorter.yml;
  
  All parameters set as String.
