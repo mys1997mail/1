@@ -72,7 +72,6 @@ Equities:
 TTServer:
     Address: "tp.st.soft-fx.eu"
     Login: "72"
-    Password: "123qwe!"
 
  
 SymbolRules: 
