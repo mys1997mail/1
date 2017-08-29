@@ -2,7 +2,7 @@
 Created new server type "TTS" (TickTrader Server) to UserSorter tool.
 
 # What does it do
-TTUserSorter is using for user sorting by required Equity and Traded Volume. It separates users into the groups according the rules, which define by regular expression in configuration file and create instruction file for MetaManagerScript.
+TTUserSorter is using for user sorting by required Equity and Traded Volume. It separates users into the groups according the rules, which define by regular expression in configuration file and creates instruction file for MetaManagerScript.
 
 # How do make it work 
 All parameters for user sorting are set in configuration file "UserSorter.yml".
