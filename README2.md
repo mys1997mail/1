@@ -16,12 +16,13 @@ All parameters for user sorting are set in configuration file "UserSorter.yml".
 	2) Login;
 	3) Password;
  - Set SymbolsRules;
- - Set PrefixCommands - strings, which set configuration setting for connection. It will display in result file for further using by MetaManagerScript;
+ - Set PrefixCommands - strings, which set configuration setting for connection. It will displayed in result file for further using by MetaManagerScript;
  - Set ScriptRules;
  	1) TimeRange - time range. Only (Current|Last)(Week|Month|Year);
 	2) CopyScriptToFolder - path, where should be create result file;
 	3) ScriptOutputName - result file name;
-	4) ExcludeGroups - regular expressions (can't be blank) which define excluded groups (should not be handled).
+	4) ExcludeGroups - regular expressions (can't be blank) which define excluded groups (should not be handled);
+	   ("*" - to exclude all groups, "!*" - to exclude nothing).
  - Save changes in UserSorter.yml;
  
  All parameters set as String.
